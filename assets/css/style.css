@@ -14,39 +14,42 @@ html {
 body {
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   color: #333;
   background-image: linear-gradient(to top left, #368280 0%, #2e61bf 100%);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  overflow-y: scroll;
+  min-height: 100vh;
 }
 
 /* Layout styles */
 main {
   position: relative;
-  width: 100rem;
-  height: 60rem;
+  width: 85%;
   background-color: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(200px);
   filter: blur();
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
   border-radius: 9px;
-  overflow: hidden;
   display: flex;
 }
 
 .headline {
-  position: absolute;
-  top: 0;
-  padding-top: 1%;
-  font-size: 16px;
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  font-size: 1.5rem;
   color: #fff;
+  text-align: center;
 }
 
 .player {
   flex: 50%;
-  padding: 9rem;
+  padding: 15rem 9rem 9rem 9rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,6 +95,7 @@ main {
   border-radius: 9px;
   color: #fff;
   width: 65%;
+  margin-top: 3rem;
   padding: 2rem;
   text-align: center;
   transition: all 0.75s;
@@ -182,16 +186,15 @@ main {
 .the-winner {
   position: absolute;
   left: 50%;
-  top: 16.5rem;
+  top: 35%;
   transform: translateX(-50%);
-  height: 10rem;
   color: #fff;
-  font-size: 40px;
+  font-size: 4rem;
 }
 
 .player--winner {
   background-color: #1a2c48;
-  background-image: url('./assets/img/6k2.gif');
+  background-image: url('/assets/img/6k2.gif');
 }
 
 .player--winner .name {
@@ -201,4 +204,118 @@ main {
 
 .hidden {
   display: none;
+}
+
+footer {
+  position: relative;
+  font-size: 1.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+footer a {
+  color: #ccc;
+}
+
+footer a:hover {
+  color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    width: 90%;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+  }
+
+  .btn::first-letter {
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+  }
+
+  .player {
+    padding: 13rem 4rem 9rem 4rem;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+
+  .the-winner {
+    top: 33%;
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  main {
+    flex-direction: column;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    padding: 0.5rem 1.3rem;
+  }
+
+  .btn--new {
+    top: 3rem;
+  }
+  .btn--roll {
+    top: 44.3%;
+  }
+  .btn--hold {
+    top: 54.5%;
+  }
+
+  .dice {
+    top: 48.3%;
+    height: 5rem;
+  }
+
+  .btn::first-letter {
+    font-size: 1.4rem;
+    margin-right: 0.3rem;
+  }
+
+  .headline {
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .player:nth-child(1) {
+    padding: 12rem 2rem 10rem 2rem;
+  }
+
+  .player:nth-child(2) {
+    padding: 12rem 2rem 7rem 2rem;
+  }
+
+  #total-score {
+    margin-top: 2.5rem;
+  }
+
+  .score {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .current {
+    margin-top: 3rem;
+    padding: 2rem 2rem 1rem 2rem;
+  }
+
+  .the-winner {
+    top: 49%;
+  }
 }

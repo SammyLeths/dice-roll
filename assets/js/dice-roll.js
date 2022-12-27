@@ -65,7 +65,7 @@ btnRoll.addEventListener('click', function () {
 
     // 2. Display dice
     diceEl.classList.remove('hidden');
-    diceEl.src = `dice-${dice}.png`;
+    diceEl.src = `/assets/img/dice-${dice}.png`;
 
     // 3. Check for rolled 1: if true, switch to next player
     if (dice !== 1) {
@@ -91,7 +91,7 @@ btnHold.addEventListener('click', function () {
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
 
-    // 2. Check if player's score is >= 20
+    // 2. Check if player's score is >= 50
     if (scores[activePlayer] >= 50) {
       // 3. Finish the game
       playing = false;
