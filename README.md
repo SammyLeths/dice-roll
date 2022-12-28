@@ -22,7 +22,7 @@ Cheers!
 
 <h2>Screenshot</h2>
 
-![Artboard 1v1-min](https://user-images.githubusercontent.com/64320618/209788382-c07fad7f-ae56-42b5-8890-995833acfdff.png)
+![Artboard 1v4-min](https://user-images.githubusercontent.com/64320618/209819423-2cfc88eb-dbe8-4efb-a54b-6d29fec40b3e.png)
 
 <h2>Links</h2>
 
@@ -71,4 +71,3 @@ Cheers!
   <li>Linkedin - <a href="https://www.linkedin.com/in/eyiowuawi/" target="_blank">@SammyLeths</a></li>
   <li>Twitter - <a href="https://twitter.com/SammyLeths" target="_blank">@SammyLeths</a></li>
 </ul>
-
