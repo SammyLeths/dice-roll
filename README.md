@@ -1,4 +1,4 @@
-# dice-roll
+<h1>Dice Roll</h1>
 
 A simple and interesting game you can play with a friend.
 
